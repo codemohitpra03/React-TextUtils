@@ -1,16 +1,16 @@
 
 import './App.css';
-import About from './components/About';
+// import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import React, { useState } from 'react'
 import Alert from './components/Alert';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 
 function App() {
@@ -45,24 +45,24 @@ function App() {
 
   return (
     <>
-      <Router>
+      {/* <Router> */}
         <Navbar title="TextUtils" aboutText="About us" mode={mode} toggleMode={toggleMode}/>   {/*passing props in the navbar component basically passings as variables and using in navbar*/}
         <Alert alert={alert}/>
         <div className="container my-3">
           
-          <Switch>
-            <Route exact path="/about">
+          {/* <Switch> */}
+            {/* <Route exact path="/about">
               <About/>
-            </Route>
+            </Route> */}
           
-            <Route exact path="/">
+            {/* <Route exact path="/"> */}
               <TextForm showAlert={showAlert} heading="Enter the Text to analyze below" mode={mode}/>
-            </Route>
-          </Switch>
+            {/* </Route> */}
+          {/* </Switch> */}
 
           {/* <About/> */}
         </div>
-        </Router>
+        {/* </Router> */}
     </>
   );
 }
