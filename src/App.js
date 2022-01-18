@@ -52,10 +52,10 @@ function App() {
           
           <Switch>
             <Route exact path="/about">
-              <About/>
+              <About mode={mode}/>
             </Route> 
           
-            <Route exact path="/">
+            <Route exact path="/React-TextUtils">
               <TextForm showAlert={showAlert} heading="Enter the Text to analyze below" mode={mode}/>
             </Route>
           </Switch>
